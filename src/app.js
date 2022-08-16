@@ -5,7 +5,7 @@ import {router} from './api/v1/routes'
 
 const app = express();
 
-connectRedis()
+// connectRedis()
 
 let vol = 0;
 

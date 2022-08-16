@@ -1,11 +1,11 @@
 {
-  "name": "rali",
+  "name": "rate-limiter",
   "version": "1.0.0",
   "description": "Develop a service via REST API that allows clients to communicate with the drones. In essence its a dispatch controller.",
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && babel src --out-dir dist  --copy-files",
-    "start": "npm run build && node dist/index.js",
+    "start": "npm run build && node dist/server.js",
     "start:dev": "nodemon --exec babel-node src/server.js",
     "test": "npm run db-prep-test && mocha --require @babel/polyfill --require @babel/register  './src/api/v1/tests/integration/*.js'",
     "migrations": "npx sequelize db:migrate",
